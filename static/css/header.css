@@ -1,7 +1,7 @@
 .wrapper {
     display: flex;
     justify-content: space-between;
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(152, 152, 152);
     padding: 5px;
     position: relative;
 }
@@ -41,7 +41,7 @@
 
     .header-menu {
         flex-direction: row;
-        width: 176px;
+        width: 291px;
         height: 15px;
     }
 }
@@ -54,7 +54,7 @@
     }
     .header-menu {
         flex-direction: row;
-        width: 218px;
+        width: 291px;
         height: 15px;
     }
    
