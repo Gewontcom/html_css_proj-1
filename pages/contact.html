@@ -1,35 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio - Contact</title>
-  <link rel="stylesheet" href="../styles.css" />
-</head>
-<body>
-  <header>
-    <h1>header</h1>
-    <nav>
-      <ul>
-        <li>
-          <a href="./index.html">Home</a>
-        </li>
-        <li>
-          <a href="./pages/contact.html">Contact</a>
-        </li>
-      </ul>
-    </nav>
-  </header>
-  <div class="container">
-    <!-- Header -->
-    <!-- Main -->
-    <main>
-      <h2>contact</h2>
-    </main>
-  </div>
-  <footer>
-    <h3>footer</h3>
-    <a href="#">link</a>
-  </footer>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio - Contact</title>
+    <script
+      src="https://kit.fontawesome.com/76b80728ab.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="wrapper">
+        <div class="header-logo">
+          <img
+            src="../static/images/logo.png"
+            class="header-logo-img"
+            alt="logo"
+          />
+        </div>
+        <ul class="header-menu">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="#">Contacts</a></li>
+          <li><a href="../pages/about-us.html">About us</a></li>
+        </ul>
+      </div>
+    </header>
+    <div class="container">
+      <!-- Header -->
+      <!-- Main -->
+      <main>
+        <form class="contact-form">
+          <input
+            class="block contact-form-input"
+            type="text"
+            placeholder="First name"
+          />
+          <input
+            class="block contact-form-input"
+            type="text"
+            placeholder="Last name"
+          />
+          <input
+            class="block contact-form-input"
+            type="email"
+            placeholder="Email"
+          />
+          <textarea
+            class="block contact-form-textarea"
+            placeholder="Write your massage..."
+          ></textarea>
+          <button class="block contact-form-submit" type="submit">Send</button>
+        </form>
+        <div class="social-media">
+          <h3>Subscribe us:</h3>
+          <div class="social-media-icons">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-linkedin"></i>
+          </div>
+        </div>
+      </main>
+    </div>
+    <footer>
+      <footer>
+        <hr />
+        <ul class="footer-menu">
+          <li>Contact</li>
+          <li>RODO</li>
+        </ul>
+        <h5 class="footer-text">Designed by Suffix</h5>
+        <h6 class="footer-year-of-production">© 2007—2023</h6>
+      </footer>
+    </footer>
+  </body>
 </html>
