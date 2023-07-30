@@ -1,7 +1,7 @@
 .contact-form {
   display: flex;
   flex-direction: column;
-  background-color: lightgray;
+  background-color: #333;
   border-radius: 5px;
   width: -moz-min-content;
   width: min-content;
@@ -10,11 +10,12 @@
 }
 
 .contact-form-input {
-  width: 300px;
+  width: 250px;
 }
 
 .contact-form-textarea {
-  width: 300px;
+  width: 250px;
+  height: 100px;
 }
 
 .contact-form-submit {
@@ -27,6 +28,7 @@
 
 .block {
   margin: 5px 0;
+  font-family: "Playfair Display", serif;
 }
 
 .social-media {

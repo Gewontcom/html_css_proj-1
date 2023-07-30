@@ -1,11 +1,14 @@
 
+@import url(../variables/_variables.scss);
+
 .header {
     width: 100%;
+    min-width: 206px;
     height: 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgb(152, 152, 152);
+    background-color: #3a3f58;
     padding: 5px;
     position: relative;
     &-logo-img {
@@ -18,15 +21,24 @@
     flex-direction: column;
     justify-content: space-around;
     width: max-content;
-    height: 84px;
+    height: 101px;
     text-decoration: none;
     list-style: none;
     position: absolute;
     top: 15px;
     right: 34px;
+    .fa-solid {
+        color: white;
+    }
 
     &-link {
         text-decoration: none;
+    }
+    
+    &-icons {
+        .fa-solid {
+            color: white;
+        }
     }
 
     &-icons-burger {
@@ -46,14 +58,17 @@
     }
     li {
         width: 50px;
-        height: 17px;
-        background-color: rgb(238, 238, 58);
+        height: 21px;
+        // background-color: #ee6a59;
         display: flex;
         justify-content: center;
         align-items: center;
         border-radius: 5px;
         cursor: pointer;
         font-size: 12px;
+        a {
+            color: white;
+        }
     }
 }
 
@@ -64,7 +79,7 @@
             display: flex;
     
             flex-direction: row;
-            width: 291px;
+            width: 282px;
             height: 22px;
             &-icons-burger {
                 display: none;
@@ -82,7 +97,7 @@
     .header-menu {
         li {
             width: 67px;
-            height: 30px;
+            
             font-size: 12px;
         }
     }
@@ -90,7 +105,7 @@
 
     .header-menu {
         flex-direction: row;
-        width: 291px;
+        width: 295px;
         height: 30px;
     }
 

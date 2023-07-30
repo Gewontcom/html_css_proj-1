@@ -6,53 +6,63 @@
     <link rel="stylesheet" href="../static/css/portfolio.css" />
     <link rel="stylesheet" href="../static/css/header.css" />
     <link rel="stylesheet" href="../static/css/footer.css" />
-    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../styles.css" />
     <title>Document</title>
   </head>
   <body>
     <header>
-        <div class="header">
-          <div class="header-logo">
-            <img
-              src="../static/images/logo.png"
-              class="header-logo-img"
-              alt="logo"
-            />
-          </div>
-          <div class="header-menu-icons">
-            <i class="header-menu-icons-burger fa-solid fa-bars"></i>
-            <i class="header-menu-icons-cross fa-solid fa-xmark"></i>
-          </div>
-          <ul class="header-menu">
-            <li><a class="header-menu-link" href="../index.html">Home</a></li>
-            <li><a class="header-menu-link" href="#">Portfolio</a></li>
-            <li><a class="header-menu-link" href="../pages/contact.html">Contacts</a></li>
-            <li><a class="header-menu-link" href="../pages/about-us.html">About us</a></li>
-          </ul>
+      <div class="header">
+        <div class="header-logo">
+          <img
+            src="../static/images/logo.png"
+            class="header-logo-img"
+            alt="logo"
+          />
         </div>
-      </header>
-
-    <div class="works">
-      <div class="container">
-        <img src="../static/images/01.jpg" class="works-img" alt="work-img" />
-        <img src="../static/images/02.jpg" class="works-img" alt="work-img" />
-        <img src="../static/images/03.jpg" class="works-img" alt="work-img" />
-        <img src="../static/images/04.jpg" class="works-img" alt="work-img" />
-        <img src="../static/images/05.jpg" class="works-img" alt="work-img" />
-        <img src="../static/images/06.jpg" class="works-img" alt="work-img" />
+        <div class="header-menu-icons">
+          <i class="header-menu-icons-burger fa-solid fa-bars"></i>
+          <i class="header-menu-icons-cross fa-solid fa-xmark"></i>
+        </div>
+        <ul class="header-menu">
+          <li><a class="header-menu-link" href="../index.html">Home</a></li>
+          <li><a class="header-menu-link" href="#">Portfolio</a></li>
+          <li>
+            <a class="header-menu-link" href="../pages/contact.html"
+              >Contacts</a
+            >
+          </li>
+          <li>
+            <a class="header-menu-link" href="../pages/about-us.html"
+              >About us</a
+            >
+          </li>
+        </ul>
       </div>
+    </header>
 
-      <button class="works-btn">Order</button>
+    <div class="wrapper">
+      <div class="container">
+        <div class="works">
+          <img src="../static/images/01.jpg" class="works-img" alt="work-img" />
+          <img src="../static/images/02.jpg" class="works-img" alt="work-img" />
+          <img src="../static/images/03.jpg" class="works-img" alt="work-img" />
+          <img src="../static/images/04.jpg" class="works-img" alt="work-img" />
+          <img src="../static/images/05.jpg" class="works-img" alt="work-img" />
+          <img src="../static/images/06.jpg" class="works-img" alt="work-img" />
+        </div>
+        <button class="works-btn">Order</button>
+      </div>
     </div>
 
     <footer>
-      <hr />
-      <ul class="footer-menu">
-        <li>Contact</li>
-        <li>RODO</li>
-      </ul>
-      <h5 class="footer-text">Designed by Suffix</h5>
-      <h6 class="footer-year-of-production">© 2007—2023</h6>
+      <div class="footer-content">
+        <p>&copy; 2023 Round Rock. All rights reserved.</p>
+        <ul>
+          <li><a href="#">About Me</a></li>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
     </footer>
   </body>
 </html>

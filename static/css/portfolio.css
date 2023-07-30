@@ -1,32 +1,67 @@
-.works {
-  width: 638px;
-  height: 371px;
-  background-color: rgb(172, 172, 172);
+.wrapper {
+  width: 100vw;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  padding: 21px;
+}
+.wrapper .container {
+  width: 206px;
+  height: 957px;
+  background-color: #3a3f58;
   padding: 10px;
   border-radius: 5px;
-  margin: 20px auto 0;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  align-items: start;
+  position: relative;
 }
-.works .container {
+.wrapper .container .works {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   height: 308px;
 }
-
-.works-img {
-  width: 190px;
-}
-
-.works-btn {
+.wrapper .container .works-btn {
   width: 70px;
   height: 30px;
-  background-color: rgb(227, 227, 55);
+  background-color: #f9ac67;
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: #3a3f58;
+}
+
+.works-img {
+  width: 190px;
+  margin-top: 10px;
+}
+
+.works-img:nth-child(1) {
+  margin-top: 0;
+}
+
+.works-img:nth-child(2) {
+  margin-top: 0;
+}
+
+@media screen and (min-width: 540px) {
+  .wrapper .container {
+    width: 411px;
+    height: 507px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .wrapper .container {
+    width: 611px;
+    height: 363px;
+  }
+  .wrapper .container .works-img:nth-child(3) {
+    margin-top: 0;
+  }
 }/*# sourceMappingURL=portfolio.css.map */

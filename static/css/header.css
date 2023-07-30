@@ -1,10 +1,12 @@
+@import url(../variables/_variables.scss);
 .header {
   width: 100%;
+  min-width: 206px;
   height: 50px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: rgb(152, 152, 152);
+  background-color: #3a3f58;
   padding: 5px;
   position: relative;
 }
@@ -18,15 +20,21 @@
   justify-content: space-around;
   width: -moz-max-content;
   width: max-content;
-  height: 84px;
+  height: 101px;
   text-decoration: none;
   list-style: none;
   position: absolute;
   top: 15px;
   right: 34px;
 }
+.header-menu .fa-solid {
+  color: white;
+}
 .header-menu-link {
   text-decoration: none;
+}
+.header-menu-icons .fa-solid {
+  color: white;
 }
 .header-menu-icons-burger {
   display: block;
@@ -44,14 +52,16 @@
 }
 .header-menu li {
   width: 50px;
-  height: 17px;
-  background-color: rgb(238, 238, 58);
+  height: 21px;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 5px;
   cursor: pointer;
   font-size: 12px;
+}
+.header-menu li a {
+  color: white;
 }
 
 @media screen and (min-width: 768px) {
@@ -61,7 +71,7 @@
   .header-menu {
     display: flex;
     flex-direction: row;
-    width: 291px;
+    width: 282px;
     height: 22px;
   }
   .header-menu-icons-burger {
@@ -74,12 +84,11 @@
 @media screen and (min-width: 1200px) {
   .header-menu li {
     width: 67px;
-    height: 30px;
     font-size: 12px;
   }
   .header-menu {
     flex-direction: row;
-    width: 291px;
+    width: 295px;
     height: 30px;
   }
 }/*# sourceMappingURL=header.css.map */

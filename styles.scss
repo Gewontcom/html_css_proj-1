@@ -13,11 +13,26 @@
     text-decoration: none;
 }
 
+html,
 body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Playfair Display', serif;
+}
+
+
+body {
+
+    min-height: 100vh !important;
+    
+    color: #333;
     font-size: 10px;
 }
 
 
+.main {
+    height: calc(100% - 58px);
+}
 
 .container {
     width: 100%;
@@ -29,4 +44,3 @@ body {
 .main-wrapper {
     height: 100%;
 }
-
