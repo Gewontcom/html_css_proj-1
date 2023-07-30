@@ -1,0 +1,32 @@
+@import url('./static/css/header.css');
+@import url('./static/css/main.css');
+@import url('./static/css/footer.css');
+@import url('./static/css/contacts.css');
+@import url("./static/css/portfolio.css");
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-size: 10px;
+}
+
+
+
+.container {
+    width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+
+.main-wrapper {
+    height: 100%;
+}
+

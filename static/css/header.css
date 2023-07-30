@@ -1,61 +1,85 @@
-.wrapper {
-    display: flex;
-    justify-content: space-between;
-    background-color: rgb(152, 152, 152);
-    padding: 5px;
-    position: relative;
+.header {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(152, 152, 152);
+  padding: 5px;
+  position: relative;
+}
+.header-logo-img {
+  width: 97px;
 }
 
 .header-menu {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    width: max-content;
-    height: 61px;
-    text-decoration: none;
-    list-style: none;
-    position: absolute;
-    top: 6px;
-    right: 4px;
-    
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+  width: -moz-max-content;
+  width: max-content;
+  height: 84px;
+  text-decoration: none;
+  list-style: none;
+  position: absolute;
+  top: 15px;
+  right: 34px;
 }
-
+.header-menu-link {
+  text-decoration: none;
+}
+.header-menu-icons-burger {
+  display: block;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 20px;
+}
+.header-menu-icons-cross {
+  display: none;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 20px;
+}
 .header-menu li {
-    width: 50px;
-    height: 25px;
-    background-color: rgb(238, 238, 58);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 12px;
-}
-
-.header-logo-img {
-    width: 33px;
-    height: 30px;
+  width: 50px;
+  height: 17px;
+  background-color: rgb(238, 238, 58);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 12px;
 }
 
 @media screen and (min-width: 768px) {
-
-    .header-menu {
-        flex-direction: row;
-        width: 291px;
-        height: 15px;
-    }
+  .header {
+    align-items: center;
+  }
+  .header-menu {
+    display: flex;
+    flex-direction: row;
+    width: 291px;
+    height: 22px;
+  }
+  .header-menu-icons-burger {
+    display: none;
+  }
+  .header-menu-icons {
+    display: none;
+  }
 }
-
 @media screen and (min-width: 1200px) {
-    .header-menu li {
-        width: 67px;
-        height: 30px;
-        font-size: 12px;
-    }
-    .header-menu {
-        flex-direction: row;
-        width: 291px;
-        height: 15px;
-    }
-   
-}
+  .header-menu li {
+    width: 67px;
+    height: 30px;
+    font-size: 12px;
+  }
+  .header-menu {
+    flex-direction: row;
+    width: 291px;
+    height: 30px;
+  }
+}/*# sourceMappingURL=header.css.map */

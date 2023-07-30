@@ -1,9 +1,8 @@
-@import url('./static/css/header.css');
-@import url('./static/css/main.css');
-@import url('./static/css/footer.css');
-@import url('./static/css/contacts.css');
+@import url("./static/css/header.css");
+@import url("./static/css/main.css");
+@import url("./static/css/footer.css");
+@import url("./static/css/contacts.css");
 @import url("./static/css/portfolio.css");
-
 *,
 *::after,
 *::before {
@@ -13,9 +12,8 @@
   text-decoration: none;
 }
 
-a {
-  color: #000;
-  text-decoration: none;
+body {
+  font-size: 10px;
 }
 
 .container {
@@ -24,11 +22,6 @@ a {
   margin: 0 auto;
 }
 
-body {
-  font-size: 10px;
-}
-
 .main-wrapper {
-    height: 100%;
-}
-
+  height: 100%;
+}/*# sourceMappingURL=styles.css.map */

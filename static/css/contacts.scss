@@ -1,0 +1,53 @@
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    background-color: lightgray;
+    border-radius: 5px;
+    width: min-content;
+    padding: 5px;
+    margin: 20px auto;
+}
+
+.contact-form-input {
+    width: 300px;
+}
+
+.contact-form-textarea {
+    width: 300px;
+}
+
+.contact-form-submit {
+    width: 60px;
+    background-color: rgb(7, 188, 7);
+    border-radius: 5px;
+    border: none;
+    height: 25px;
+}
+
+.block {
+    margin: 5px 0;
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.social-media h3 {
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+.fa-brands {
+    font-size: 25px;
+    margin: 0 5px;
+    cursor: pointer;
+
+}
+
+.social-media-icons {
+    display: flex;
+
+}
