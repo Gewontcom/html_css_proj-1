@@ -1,14 +1,20 @@
+@import "../variables/variables";
 
-@import url(../variables/_variables.scss);
+
+.active {
+    background-color: $color-pink;
+    color: $color-dark;
+}
+  
 
 .header {
     width: 100%;
-    min-width: 206px;
+    min-width: 400px;
     height: 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #3a3f58;
+    background-color: $color-dark;
     padding: 5px;
     position: relative;
     &-logo-img {
@@ -33,6 +39,8 @@
 
     &-link {
         text-decoration: none;
+        padding: 5px;
+        border-radius: 5px;
     }
     
     &-icons {
@@ -57,9 +65,8 @@
         font-size: 20px;
     }
     li {
-        width: 50px;
+        width: 67px;
         height: 21px;
-        // background-color: #ee6a59;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -69,7 +76,10 @@
         a {
             color: white;
         }
+        
     }
+  
+ 
 }
 
 @media screen and (min-width: 768px) {
@@ -77,9 +87,8 @@
         align-items: center;
         &-menu {
             display: flex;
-    
             flex-direction: row;
-            width: 282px;
+            width: 377px;
             height: 22px;
             &-icons-burger {
                 display: none;
@@ -87,26 +96,23 @@
             &-icons {
                 display: none;
             }
+           
+        
         }
+     
     }
-
+    
     
 }
 
 @media screen and (min-width: 1200px) {
     .header-menu {
+        flex-direction: row;
+        width: 379px;
+        height: 22px;
         li {
             width: 67px;
-            
             font-size: 12px;
         }
     }
-
-
-    .header-menu {
-        flex-direction: row;
-        width: 295px;
-        height: 30px;
-    }
-
 }

@@ -1,37 +1,27 @@
-@import url('./static/css/header.css');
-@import url('./static/css/main.css');
-@import url('./static/css/footer.css');
-@import url('./static/css/contacts.css');
-@import url("./static/css/portfolio.css");
+@import './static/basics/_reset.scss';
+@import './static/scss/_header.scss';
+@import './static/scss/_about_us.scss';
+@import './static/scss/_footer.scss';
+@import './static/scss/_contacts.scss';
+@import "./static/scss/_portfolio.scss";
 
-*,
-*::after,
-*::before {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-}
 
 html,
 body {
-    margin: 0;
-    padding: 0;
     font-family: 'Playfair Display', serif;
+
 }
 
 
 body {
-
-    min-height: 100vh !important;
-    
+    min-height: 400px;
     color: #333;
     font-size: 10px;
 }
 
 
-.main {
-    height: calc(100% - 58px);
+main {
+    min-height: 446px;
 }
 
 .container {

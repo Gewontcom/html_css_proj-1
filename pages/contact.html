@@ -1,82 +1,56 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio - Contact</title>
-    <script
-      src="https://kit.fontawesome.com/76b80728ab.js"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="stylesheet" href="../styles.css" />
-  </head>
-  <body>
-    <header>
-        <div class="header">
-          <div class="header-logo">
-            <img
-              src="../static/images/logo.png"
-              class="header-logo-img"
-              alt="logo"
-            />
-          </div>
-          <div class="header-menu-icons">
-            <i class="header-menu-icons-burger fa-solid fa-bars"></i>
-            <i class="header-menu-icons-cross fa-solid fa-xmark"></i>
-          </div>
-          <ul class="header-menu">
-            <li><a class="header-menu-link" href="../index.html">Home</a></li>
-            <li><a class="header-menu-link" href="../pages/portfolio.html">Portfolio</a></li>
-            <li><a class="header-menu-link" href="#">Contacts</a></li>
-            <li><a class="header-menu-link" href="../pages/about-us.html">About us</a></li>
-          </ul>
-        </div>
-      </header>
-
-      <!-- Header -->
-      <!-- Main -->
-      <main>
-        <form class="contact-form">
-          <input
-            class="block contact-form-input"
-            type="text"
-            placeholder="First name"
-          />
-          <input
-            class="block contact-form-input"
-            type="text"
-            placeholder="Last name"
-          />
-          <input
-            class="block contact-form-input"
-            type="email"
-            placeholder="Email"
-          />
-          <textarea
-            class="block contact-form-textarea"
-            placeholder="Write your massage..."
-          ></textarea>
-          <button class="block contact-form-submit" type="submit">Send</button>
-        </form>
-        <div class="social-media">
-          <h3>Subscribe us:</h3>
-          <div class="social-media-icons">
-            <i class="fa-brands fa-facebook"></i>
-            <i class="fa-brands fa-instagram"></i>
-            <i class="fa-brands fa-linkedin"></i>
-          </div>
-        </div>
-      </main>
-    
-      <footer>
-        <div class="footer-content">
-            <p>&copy; 2023 Round Rock. All rights reserved.</p>
-            <ul>
-                <li><a href="#">About Me</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </div>
-    </footer>
-  </body>
-</html>
+<main class="contacts">
+  <div class="wrapper">
+    <form class="contact-form">
+      <input
+        class="block contact-form-input"
+        type="text"
+        placeholder="First name"
+      />
+      <input
+        class="block contact-form-input"
+        type="text"
+        placeholder="Last name"
+      />
+      <input
+        class="block contact-form-input"
+        type="email"
+        placeholder="Email"
+      />
+      <textarea
+        class="block contact-form-textarea"
+        placeholder="Write your massage..."
+      ></textarea>
+      <button class="block contact-form-submit" type="submit">Send</button>
+    </form>
+    <div class="social-media">
+      <h3>Subscribe us:</h3>
+      <div class="social-media-icons">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-linkedin"></i>
+      </div>
+    </div>
+  </div>
+  <div class="maps">
+    <iframe
+      class="small-map"
+      src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d19546.90838861206!2d20.987042!3d52.23678!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471ecc88767ccbdb%3A0xa3a94086dff7adef!2splac%20Mirowski%201%2F48%2C%2000-138%20Warszawa!5e0!3m2!1suk!2spl!4v1690724430877!5m2!1suk!2spl"
+      width="400"
+      height="300"
+      style="border: 0"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+    ></iframe>
+    <iframe
+      class="big-map"
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1221.6367566830147!2d20.995882238899878!3d52.23841549299715!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471ecc88767ccbdb%3A0xa3a94086dff7adef!2splac%20Mirowski%201%2F48%2C%2000-138%20Warszawa!5e0!3m2!1suk!2spl!4v1690722890302!5m2!1suk!2spl"
+      width="600"
+      height="450"
+      style="border: 0"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+    ></iframe>
+  </div>
+</main>

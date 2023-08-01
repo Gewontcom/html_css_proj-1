@@ -1,17 +1,18 @@
+@import "../variables/variables";
+
 .wrapper {
-    width: 100vw;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: start;
     padding: 21px;
-    
+    min-height: 450px;
 
     .container {
       
         width: 206px;
         height: 957px;
-        background-color: #3a3f58;
+        background-color: $color-dark;
         padding: 10px;
         border-radius: 5px;
         display: flex;
@@ -32,14 +33,14 @@
         .works-btn {
             width: 70px;
             height: 30px;
-            background-color: #f9ac67;
+            background-color: $color-milk;
             border: none;
             border-radius: 5px;
             cursor: pointer;
             position: absolute;
             bottom: 10px;
             left: 10px;
-            color: #3a3f58;
+            color: $color-dark;
 
         }
     }
