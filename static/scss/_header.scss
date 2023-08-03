@@ -8,8 +8,8 @@
   
 
 .header {
-    width: 100%;
-    min-width: 400px;
+    width: 100vw;
+    min-width: 250px;
     height: 50px;
     display: flex;
     justify-content: space-between;
@@ -33,6 +33,9 @@
     position: absolute;
     top: 15px;
     right: 34px;
+    z-index: 2;
+    padding: 10px;
+    border-radius: 5px;
     .fa-solid {
         color: white;
     }
@@ -41,6 +44,12 @@
         text-decoration: none;
         padding: 5px;
         border-radius: 5px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: $color-dark;
+        font-weight: 900;
     }
     
     &-icons {
@@ -65,7 +74,7 @@
         font-size: 20px;
     }
     li {
-        width: 67px;
+        width: 100%;
         height: 21px;
         display: flex;
         justify-content: center;
@@ -73,9 +82,7 @@
         border-radius: 5px;
         cursor: pointer;
         font-size: 12px;
-        a {
-            color: white;
-        }
+      
         
     }
   
@@ -90,6 +97,7 @@
             flex-direction: row;
             width: 377px;
             height: 22px;
+            padding: 0;
             &-icons-burger {
                 display: none;
             }
@@ -98,6 +106,10 @@
             }
            
         
+        }
+        &-menu-link {
+            color: white;
+            font-weight: normal;
         }
      
     }
@@ -111,7 +123,7 @@
         width: 379px;
         height: 22px;
         li {
-            width: 67px;
+            width: 77px;
             font-size: 12px;
         }
     }

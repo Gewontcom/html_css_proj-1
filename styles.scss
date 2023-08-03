@@ -3,13 +3,12 @@
 @import './static/scss/_about_us.scss';
 @import './static/scss/_footer.scss';
 @import './static/scss/_contacts.scss';
-@import "./static/scss/_portfolio.scss";
+@import "./static/scss/_works.scss";
 
 
 html,
 body {
     font-family: 'Playfair Display', serif;
-
 }
 
 
@@ -21,7 +20,8 @@ body {
 
 
 main {
-    min-height: 446px;
+    min-height: 453px;
+    min-width: 302px;
 }
 
 .container {

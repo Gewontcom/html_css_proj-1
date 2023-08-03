@@ -1,3 +1,9 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -25,8 +31,13 @@ footer, header, hgroup, menu, nav, section {
   display: block;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 body {
   line-height: 1;
+  overflow-x: hidden;
 }
 
 ol, ul {
@@ -54,8 +65,8 @@ table {
 }
 
 .header {
-  width: 100%;
-  min-width: 400px;
+  width: 100vw;
+  min-width: 250px;
   height: 50px;
   display: flex;
   justify-content: space-between;
@@ -80,6 +91,9 @@ table {
   position: absolute;
   top: 15px;
   right: 34px;
+  z-index: 2;
+  padding: 10px;
+  border-radius: 5px;
 }
 .header-menu .fa-solid {
   color: white;
@@ -88,6 +102,12 @@ table {
   text-decoration: none;
   padding: 5px;
   border-radius: 5px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #3a3f58;
+  font-weight: 900;
 }
 .header-menu-icons .fa-solid {
   color: white;
@@ -107,7 +127,7 @@ table {
   font-size: 20px;
 }
 .header-menu li {
-  width: 67px;
+  width: 100%;
   height: 21px;
   display: flex;
   justify-content: center;
@@ -115,9 +135,6 @@ table {
   border-radius: 5px;
   cursor: pointer;
   font-size: 12px;
-}
-.header-menu li a {
-  color: white;
 }
 
 @media screen and (min-width: 768px) {
@@ -129,12 +146,17 @@ table {
     flex-direction: row;
     width: 377px;
     height: 22px;
+    padding: 0;
   }
   .header-menu-icons-burger {
     display: none;
   }
   .header-menu-icons {
     display: none;
+  }
+  .header-menu-link {
+    color: white;
+    font-weight: normal;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -144,7 +166,7 @@ table {
     height: 22px;
   }
   .header-menu li {
-    width: 67px;
+    width: 77px;
     font-size: 12px;
   }
 }
@@ -164,7 +186,7 @@ footer {
   color: #fff;
   padding: 20px 0;
   text-align: center;
-  min-width: 400px;
+  min-width: 250px;
   width: 100%;
   font-size: 10px;
 }
@@ -203,8 +225,8 @@ footer {
 }
 
 .header {
-  width: 100%;
-  min-width: 400px;
+  width: 100vw;
+  min-width: 250px;
   height: 50px;
   display: flex;
   justify-content: space-between;
@@ -229,6 +251,9 @@ footer {
   position: absolute;
   top: 15px;
   right: 34px;
+  z-index: 2;
+  padding: 10px;
+  border-radius: 5px;
 }
 .header-menu .fa-solid {
   color: white;
@@ -237,6 +262,12 @@ footer {
   text-decoration: none;
   padding: 5px;
   border-radius: 5px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #3a3f58;
+  font-weight: 900;
 }
 .header-menu-icons .fa-solid {
   color: white;
@@ -256,7 +287,7 @@ footer {
   font-size: 20px;
 }
 .header-menu li {
-  width: 67px;
+  width: 100%;
   height: 21px;
   display: flex;
   justify-content: center;
@@ -264,9 +295,6 @@ footer {
   border-radius: 5px;
   cursor: pointer;
   font-size: 12px;
-}
-.header-menu li a {
-  color: white;
 }
 
 @media screen and (min-width: 768px) {
@@ -278,12 +306,17 @@ footer {
     flex-direction: row;
     width: 377px;
     height: 22px;
+    padding: 0;
   }
   .header-menu-icons-burger {
     display: none;
   }
   .header-menu-icons {
     display: none;
+  }
+  .header-menu-link {
+    color: white;
+    font-weight: normal;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -293,7 +326,7 @@ footer {
     height: 22px;
   }
   .header-menu li {
-    width: 67px;
+    width: 77px;
     font-size: 12px;
   }
 }
@@ -374,7 +407,7 @@ footer {
   color: #fff;
   padding: 20px 0;
   text-align: center;
-  min-width: 400px;
+  min-width: 250px;
   width: 100%;
   font-size: 10px;
 }
@@ -479,10 +512,12 @@ footer {
   flex-direction: column;
   margin: 0 auto;
 }
-.maps .big-map {
-  display: none;
-}
 
+@media screen and (min-width: 768px) {
+  .contact-form-input, .contact-form-textarea {
+    min-width: 500px;
+  }
+}
 .wrapper {
   height: 100%;
   display: flex;
@@ -562,7 +597,8 @@ body {
 }
 
 main {
-  min-height: 446px;
+  min-height: 453px;
+  min-width: 302px;
 }
 
 .container {
