@@ -16,7 +16,9 @@
     align-items: center;
     background-color: $color-dark;
     padding: 5px;
-    position: relative;
+    position: fixed;
+    top: 0;
+    left: 0;
     &-logo-img {
         width: 97px;
     }

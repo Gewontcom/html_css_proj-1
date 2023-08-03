@@ -9,7 +9,25 @@
     border-radius: 5px;
     width: min-content;
     padding: 5px;
+    padding-top: 10px;
     margin: 20px auto;
+
+    &-header {
+        font-size: 20px;
+        margin-bottom: 5px;
+        color: $color-white;
+    }
+
+    &-submit {
+        width: 60px;
+        background-color: $color-milk;
+        border-radius: 5px;
+        border: none;
+        height: 25px;
+        color: $color-dark;
+        font-weight: 700;
+    }
+
 }
 
 .contact-form-input {
@@ -21,14 +39,7 @@
     height: 100px;
 }
 
-.contact-form-submit {
-    width: 60px;
-    background-color: $color-milk;
-    border-radius: 5px;
-    border: none;
-    height: 25px;
-    color: $color-dark;
-}
+
 
 .block {
     margin: 5px 0;
@@ -42,9 +53,11 @@
     flex-direction: column;
     margin: 0 auto;
 
-    h3 {
-        font-size: 15px;
+    &-header {
+        font-size: 20px;
         margin-bottom: 5px;
+        color: $color-dark;
+        padding-bottom: 5px;
     }
 }
 
@@ -67,10 +80,10 @@
     flex-direction: column;
     padding-bottom: 100px;
 
-    .wrapper {
+    .wrapper-for-contacts {
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: start;
     }
 }
 
@@ -78,13 +91,23 @@
     display: flex;
     flex-direction: column;
     margin: 0 auto;
+    margin-bottom: 20px;
 
-   
+    .maps-header {
+        display: flex;
+        justify-content: center;
+        padding-bottom: 10px;
+        color: $color-dark;
+        font-size: 20px;
+    }
+
 }
 
 @media screen and (min-width: 768px) {
-    .contact-form-input, .contact-form-textarea {
+
+    .contact-form-input,
+    .contact-form-textarea {
         min-width: 500px;
     }
-    
+
 }
