@@ -1,5 +1,6 @@
-@import "./footer.scss";
-@import "./header.scss";
+/* styles.css */
+@import "./footer.css";
+@import "./header.css";
 
 .about-us {
     max-width: 1200px;
@@ -8,52 +9,131 @@
     padding: 20px 40px;
     background-color: $color-white;
     margin: 0 auto;
-  
+
     h1 {
-      text-align: center;
-      margin-bottom: 20px;
-      font-size: 32px;
-      font-weight: bold;
-      color: #333;
+        text-align: center;
+        margin-bottom: 20px;
+        font-size: 32px;
+        font-weight: bold;
+        color: #333;
     }
-  
+
     .developer {
-      display: flex;
-      align-items: center;
-      margin-bottom: 40px;
-  
-      .developer-image {
-        flex: 0 0 200px;
-        border-radius: 50%;
-        overflow: hidden;
-        margin-right: 30px;
-  
-        img {
-          width: 100%;
-          height: auto;
+        display: flex;
+        align-items: center;
+        margin-bottom: 40px;
+
+        .developer-image {
+            flex: 0 0 200px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin-right: 30px;
+
+            img {
+                width: 100%;
+                height: auto;
+            }
         }
-      }
-  
-      .developer-info {
-        flex: 1;
-  
-        h2 {
-          font-size: 24px;
-          margin-bottom: 10px;
-          color: #333;
+
+        .developer-info {
+            flex: 1;
+
+            h2 {
+                font-size: 24px;
+                margin-bottom: 10px;
+                color: #333;
+                background-color: $color-dark;
+                padding: 5px;
+                color: $color-white;
+                border-radius: 5px;
+                width: 201px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 10px auto;
+            }
+
+            p {
+                color: #666;
+                line-height: 1.6;
+                font-size: 15px;
+                width: 194px;
+                margin: 5px auto;
+
+                &-emma {
+                    text-align: end;
+                }
+            }
         }
-  
-        p {
-          color: #666;
-          line-height: 1.6;
-        }
-      }
     }
-  }
-  
 
+    @media screen and (max-width: 767px) {
+        .about-us {
+            padding: 20px;
+        }
 
-@media screen and (min-width: 768px) {}
+        .developer {
+            flex-direction: column;
+            margin-bottom: 20px;
 
+            .developer-image {
+                flex: 0 0 auto;
+                margin-right: 0;
+                margin-bottom: 20px;
+            }
 
-@media screen and (min-width: 1200px) {}
+            &-info {
+                p {
+                    color: #666;
+                    line-height: 1.6;
+                    font-size: 15px;
+                    width: 399px;
+                }
+            }
+        }
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        .about-us {
+            padding: 40px;
+        }
+
+        .developer {
+            margin-bottom: 60px;
+
+            .developer-image {
+                flex: 0 0 250px;
+                margin-right: 40px;
+            }
+
+            .developer-info h2 {
+                font-size: 28px;
+                width: 220px;
+            }
+            .developer-info p {
+                width: 361px;
+                text-align: center;
+            }
+        }
+    }
+
+    @media screen and (min-width: 1200px) {
+        .about-us {
+            padding: 60px;
+        }
+
+        .developer {
+            margin-bottom: 80px;
+
+            .developer-image {
+                flex: 0 0 300px;
+                margin-right: 60px;
+            }
+
+            .developer-info h2 {
+                font-size: 32px;
+                width: 240px;
+            }
+        }
+    }
+}

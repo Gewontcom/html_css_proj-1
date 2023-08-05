@@ -1,3 +1,5 @@
+@import "./footer.css";
+@import "./header.css";
 * {
   box-sizing: border-box;
   margin: 0;
@@ -172,168 +174,7 @@ table {
     font-size: 12px;
   }
 }
-html,
-body {
-  min-height: 100vh;
-}
-
-body {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
-
-footer {
-  background-color: #3a3f58;
-  color: #fff;
-  padding: 20px 0;
-  text-align: center;
-  min-width: 250px;
-  width: 100%;
-  font-size: 10px;
-}
-
-.footer-content {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.footer-content p {
-  margin: 0;
-}
-
-.footer-content ul {
-  list-style: none;
-  padding: 0;
-}
-
-.footer-content li {
-  display: inline-block;
-  margin-right: 20px;
-}
-
-.footer-content li:last-child {
-  margin-right: 0;
-}
-
-.footer-content a {
-  color: #fff;
-  text-decoration: none;
-}
-
-.active {
-  background-color: #EE6A59;
-  color: #3a3f58;
-}
-
-.header {
-  width: 100vw;
-  min-width: 250px;
-  height: 50px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #3a3f58;
-  padding: 5px;
-  position: fixed;
-  top: 0;
-  left: 0;
-}
-.header-logo-img {
-  width: 97px;
-}
-
-.header-menu {
-  display: none;
-  flex-direction: column;
-  justify-content: space-around;
-  width: -moz-max-content;
-  width: max-content;
-  height: 101px;
-  text-decoration: none;
-  list-style: none;
-  position: absolute;
-  top: 15px;
-  right: 34px;
-  z-index: 2;
-  padding: 10px;
-  border-radius: 5px;
-}
-.header-menu .fa-solid {
-  color: white;
-}
-.header-menu-link {
-  text-decoration: none;
-  padding: 5px;
-  border-radius: 5px;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #3a3f58;
-  font-weight: 900;
-}
-.header-menu-icons .fa-solid {
-  color: white;
-}
-.header-menu-icons-burger {
-  display: block;
-  position: absolute;
-  top: 15px;
-  right: 15px;
-  font-size: 20px;
-}
-.header-menu-icons-cross {
-  display: none;
-  position: absolute;
-  top: 15px;
-  right: 15px;
-  font-size: 20px;
-}
-.header-menu li {
-  width: 100%;
-  height: 21px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 12px;
-}
-
-@media screen and (min-width: 768px) {
-  .header {
-    align-items: center;
-  }
-  .header-menu {
-    display: flex;
-    flex-direction: row;
-    width: 377px;
-    height: 22px;
-    padding: 0;
-  }
-  .header-menu-icons-burger {
-    display: none;
-  }
-  .header-menu-icons {
-    display: none;
-  }
-  .header-menu-link {
-    color: white;
-    font-weight: normal;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .header-menu {
-    flex-direction: row;
-    width: 379px;
-    height: 22px;
-  }
-  .header-menu li {
-    width: 77px;
-    font-size: 12px;
-  }
-}
+/* styles.css */
 .about-us {
   max-width: 1200px;
   width: 85%;
@@ -371,10 +212,81 @@ footer {
   font-size: 24px;
   margin-bottom: 10px;
   color: #333;
+  background-color: #3a3f58;
+  padding: 5px;
+  color: #ECE6CD;
+  border-radius: 5px;
+  width: 201px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px auto;
 }
 .about-us .developer .developer-info p {
   color: #666;
   line-height: 1.6;
+  font-size: 15px;
+  width: 194px;
+  margin: 5px auto;
+}
+.about-us .developer .developer-info p-emma {
+  text-align: end;
+}
+@media screen and (max-width: 767px) {
+  .about-us .about-us {
+    padding: 20px;
+  }
+  .about-us .developer {
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  .about-us .developer .developer-image {
+    flex: 0 0 auto;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+  .about-us .developer-info p {
+    color: #666;
+    line-height: 1.6;
+    font-size: 15px;
+    width: 399px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .about-us .about-us {
+    padding: 40px;
+  }
+  .about-us .developer {
+    margin-bottom: 60px;
+  }
+  .about-us .developer .developer-image {
+    flex: 0 0 250px;
+    margin-right: 40px;
+  }
+  .about-us .developer .developer-info h2 {
+    font-size: 28px;
+    width: 220px;
+  }
+  .about-us .developer .developer-info p {
+    width: 361px;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .about-us .about-us {
+    padding: 60px;
+  }
+  .about-us .developer {
+    margin-bottom: 80px;
+  }
+  .about-us .developer .developer-image {
+    flex: 0 0 300px;
+    margin-right: 60px;
+  }
+  .about-us .developer .developer-info h2 {
+    font-size: 32px;
+    width: 240px;
+  }
 }
 
 html,
