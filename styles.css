@@ -1,3 +1,6 @@
+
+
+@import url(./home-style.css);
 * {
   box-sizing: border-box;
   margin: 0;
@@ -600,7 +603,7 @@ body {
 }
 
 main {
-  min-height: 460px;
+  min-height: 80px;
   min-width: 302px;
   padding-top: 50px;
 }

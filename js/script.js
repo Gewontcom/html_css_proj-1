@@ -84,3 +84,5 @@ function handleScreenWidth() {
 handleScreenWidth();
 
 window.addEventListener("resize", handleScreenWidth);
+
+
