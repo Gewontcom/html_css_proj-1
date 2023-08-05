@@ -426,7 +426,18 @@ footer {
   text-decoration: none;
 }
 
-.contact-form {
+.contacts {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 100px;
+  padding-top: -10px;
+}
+.contacts .wrapper-for-contacts {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+.contacts .wrapper-for-contacts .contact-form {
   display: flex;
   flex-direction: column;
   background-color: #3a3f58;
@@ -437,12 +448,12 @@ footer {
   padding-top: 10px;
   margin: 20px auto;
 }
-.contact-form-header {
+.contacts .wrapper-for-contacts .contact-form-header {
   font-size: 20px;
   margin-bottom: 5px;
   color: #ECE6CD;
 }
-.contact-form-submit {
+.contacts .wrapper-for-contacts .contact-form-submit {
   width: 60px;
   background-color: #f9ac67;
   border-radius: 5px;
@@ -488,17 +499,6 @@ footer {
 
 .social-media-icons {
   display: flex;
-}
-
-.contacts {
-  display: flex;
-  flex-direction: column;
-  padding-bottom: 100px;
-}
-.contacts .wrapper-for-contacts {
-  display: flex;
-  flex-direction: column;
-  justify-content: start;
 }
 
 .maps {
@@ -600,7 +600,7 @@ body {
 }
 
 main {
-  min-height: 453px;
+  min-height: 460px;
   min-width: 302px;
   padding-top: 50px;
 }
